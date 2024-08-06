@@ -9,6 +9,21 @@
   </head>
   <body>
     <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <div>
+      <div id="controls">
+        <div class="rectangleControl" id="floor" draggable="true" style="background-color: blue;">Piso</div>
+        <div class="rectangleControl" id="area" draggable="true" style="background-color: green;">Area</div>
+      </div>
+      <canvas id="c1" width="800" height="600"></canvas>
+      <input type="text" id="myText" value="Mickey">
+      <button onclick="updateGroup()">Update</button>
+      <button onclick="saveJSON()">guarda</button>
+
+    </div>
+
   </body>
+  <script type="text/javascript" src="/main.js"></script>
+
 </html>

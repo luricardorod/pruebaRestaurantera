@@ -1,9 +1,17 @@
-#drag-me {
-  display: inline-block;
-  width: 100px;
-  background-color: green;
-  height: 100px;
+.rectangleControl {
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
 }
+
 canvas {
   border: 1px solid #000000;
+}
+#controls {
+  display: flex;
+  gap: 15px;
+  margin: 10px;
 }
