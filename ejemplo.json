@@ -1,0 +1,3070 @@
+{
+  "version": "5.2.1",
+  "objects": [
+    {
+      "type": "rect",
+      "version": "5.2.1",
+      "left": 13,
+      "top": 34,
+      "width": 50,
+      "height": 50,
+      "fill": "rgba(0, 255, 0, 0.1)",
+      "scaleX": 12.08,
+      "scaleY": 8.25,
+      "zoneType": "PISO",
+      "relationID": 1723481332832,
+      "selectable": true
+    },
+    {
+      "type": "rect",
+      "version": "5.2.1",
+      "left": 59,
+      "top": 493,
+      "width": 50,
+      "height": 50,
+      "fill": "rgba(0, 255, 0, 0.1)",
+      "scaleX": 12.16,
+      "scaleY": 8.68,
+      "zoneType": "PISO",
+      "relationID": 1723481354921,
+      "selectable": true
+    },
+    {
+      "type": "rect",
+      "version": "5.2.1",
+      "left": 82,
+      "top": 984,
+      "width": 50,
+      "height": 50,
+      "fill": "rgba(0, 255, 0, 0.1)",
+      "scaleX": 11.96,
+      "scaleY": 9.1,
+      "zoneType": "PISO",
+      "relationID": 1723481375079,
+      "selectable": true
+    },
+    {
+      "type": "textbox",
+      "version": "5.2.1",
+      "left": 269.63,
+      "top": 9,
+      "width": 102.82,
+      "height": 28.25,
+      "fontFamily": "Helvetica, Arial, sans-serif",
+      "fontSize": 25,
+      "text": "lobremes",
+      "textAlign": "center",
+      "styles": [],
+      "minWidth": 20,
+      "splitByGrapheme": false,
+      "relationID": 1723481332832,
+      "selectable": false
+    },
+    {
+      "type": "group",
+      "version": "5.2.1",
+      "left": 77,
+      "top": 61.5,
+      "width": 96,
+      "height": 105,
+      "scaleX": 0.51,
+      "scaleY": 0.51,
+      "zoneType": "TABLE",
+      "relationID": 1723481339912,
+      "selectable": true,
+      "objects": [
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -40,
+          "top": -18.5,
+          "width": 67,
+          "height": 52,
+          "fill": "rgba(0, 128, 0, 0.6)",
+          "stroke": "rgba(0, 128, 0, 0.6)",
+          "strokeWidth": 12,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              14,
+              40
+            ],
+            [
+              "L",
+              14,
+              64
+            ],
+            [
+              "M",
+              81,
+              40
+            ],
+            [
+              "L",
+              81,
+              64
+            ],
+            [
+              "M",
+              38,
+              68
+            ],
+            [
+              "L",
+              38,
+              92
+            ],
+            [
+              "M",
+              57,
+              68
+            ],
+            [
+              "L",
+              57,
+              92
+            ],
+            [
+              "M",
+              28,
+              42
+            ],
+            [
+              "L",
+              28,
+              73
+            ],
+            [
+              "L",
+              67,
+              73
+            ],
+            [
+              "L",
+              67,
+              42
+            ],
+            [
+              "z"
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -17,
+          "top": -48.5,
+          "width": 32,
+          "height": 10,
+          "fill": "rgba(0, 128, 0, 0.6)",
+          "stroke": "rgba(0, 128, 0, 0.6)",
+          "strokeWidth": 2,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              32,
+              5
+            ],
+            [
+              "L",
+              37,
+              15
+            ],
+            [
+              "M",
+              64,
+              5
+            ],
+            [
+              "L",
+              58,
+              15
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -26.5,
+          "top": -43.25,
+          "width": 51,
+          "height": 35.25,
+          "fill": "rgba(0, 128, 0, 0.6)",
+          "stroke": "rgba(0, 128, 0, 0.6)",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              22,
+              35
+            ],
+            [
+              "L",
+              73,
+              35
+            ],
+            [
+              "L",
+              73,
+              45
+            ],
+            [
+              "L",
+              22,
+              45
+            ],
+            [
+              "z"
+            ],
+            [
+              "M",
+              22,
+              33
+            ],
+            [
+              "C",
+              22,
+              2,
+              73,
+              2,
+              73,
+              33
+            ]
+          ]
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": -14.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": 8.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        }
+      ]
+    },
+    {
+      "type": "textbox",
+      "version": "5.2.1",
+      "left": 97.55,
+      "top": 80.06,
+      "width": 8.34,
+      "height": 16.95,
+      "fontFamily": "Helvetica, Arial, sans-serif",
+      "fontSize": 15,
+      "text": "4",
+      "textAlign": "center",
+      "styles": [],
+      "minWidth": 20,
+      "splitByGrapheme": false,
+      "relationID": 1723481339912,
+      "selectable": false
+    },
+    {
+      "type": "group",
+      "version": "5.2.1",
+      "left": 563,
+      "top": 79.5,
+      "width": 96,
+      "height": 105,
+      "scaleX": 0.45,
+      "scaleY": 0.45,
+      "zoneType": "TABLE",
+      "relationID": 1723481345809,
+      "selectable": true,
+      "objects": [
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -40,
+          "top": -18.5,
+          "width": 67,
+          "height": 52,
+          "fill": "rgba(128, 128, 0, 0.6)",
+          "stroke": "rgba(128, 128, 0, 0.6)",
+          "strokeWidth": 12,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              14,
+              40
+            ],
+            [
+              "L",
+              14,
+              64
+            ],
+            [
+              "M",
+              81,
+              40
+            ],
+            [
+              "L",
+              81,
+              64
+            ],
+            [
+              "M",
+              38,
+              68
+            ],
+            [
+              "L",
+              38,
+              92
+            ],
+            [
+              "M",
+              57,
+              68
+            ],
+            [
+              "L",
+              57,
+              92
+            ],
+            [
+              "M",
+              28,
+              42
+            ],
+            [
+              "L",
+              28,
+              73
+            ],
+            [
+              "L",
+              67,
+              73
+            ],
+            [
+              "L",
+              67,
+              42
+            ],
+            [
+              "z"
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -17,
+          "top": -48.5,
+          "width": 32,
+          "height": 10,
+          "fill": "rgba(128, 128, 0, 0.6)",
+          "stroke": "rgba(128, 128, 0, 0.6)",
+          "strokeWidth": 2,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              32,
+              5
+            ],
+            [
+              "L",
+              37,
+              15
+            ],
+            [
+              "M",
+              64,
+              5
+            ],
+            [
+              "L",
+              58,
+              15
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -26.5,
+          "top": -43.25,
+          "width": 51,
+          "height": 35.25,
+          "fill": "rgba(128, 128, 0, 0.6)",
+          "stroke": "rgba(128, 128, 0, 0.6)",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              22,
+              35
+            ],
+            [
+              "L",
+              73,
+              35
+            ],
+            [
+              "L",
+              73,
+              45
+            ],
+            [
+              "L",
+              22,
+              45
+            ],
+            [
+              "z"
+            ],
+            [
+              "M",
+              22,
+              33
+            ],
+            [
+              "C",
+              22,
+              2,
+              73,
+              2,
+              73,
+              33
+            ]
+          ]
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": -14.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": 8.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        }
+      ]
+    },
+    {
+      "type": "textbox",
+      "version": "5.2.1",
+      "left": 580.44,
+      "top": 94.66,
+      "width": 8.34,
+      "height": 16.95,
+      "fontFamily": "Helvetica, Arial, sans-serif",
+      "fontSize": 15,
+      "text": "5",
+      "textAlign": "center",
+      "styles": [],
+      "minWidth": 20,
+      "splitByGrapheme": false,
+      "relationID": 1723481345809,
+      "selectable": false
+    },
+    {
+      "type": "group",
+      "version": "5.2.1",
+      "left": 271,
+      "top": 194.5,
+      "width": 96,
+      "height": 105,
+      "scaleX": 0.46,
+      "scaleY": 0.46,
+      "zoneType": "TABLE",
+      "relationID": 1723481350136,
+      "selectable": true,
+      "objects": [
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -40,
+          "top": -18.5,
+          "width": 67,
+          "height": 52,
+          "fill": "rgba(128, 128, 0, 0.6)",
+          "stroke": "rgba(128, 128, 0, 0.6)",
+          "strokeWidth": 12,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              14,
+              40
+            ],
+            [
+              "L",
+              14,
+              64
+            ],
+            [
+              "M",
+              81,
+              40
+            ],
+            [
+              "L",
+              81,
+              64
+            ],
+            [
+              "M",
+              38,
+              68
+            ],
+            [
+              "L",
+              38,
+              92
+            ],
+            [
+              "M",
+              57,
+              68
+            ],
+            [
+              "L",
+              57,
+              92
+            ],
+            [
+              "M",
+              28,
+              42
+            ],
+            [
+              "L",
+              28,
+              73
+            ],
+            [
+              "L",
+              67,
+              73
+            ],
+            [
+              "L",
+              67,
+              42
+            ],
+            [
+              "z"
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -17,
+          "top": -48.5,
+          "width": 32,
+          "height": 10,
+          "fill": "rgba(128, 128, 0, 0.6)",
+          "stroke": "rgba(128, 128, 0, 0.6)",
+          "strokeWidth": 2,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              32,
+              5
+            ],
+            [
+              "L",
+              37,
+              15
+            ],
+            [
+              "M",
+              64,
+              5
+            ],
+            [
+              "L",
+              58,
+              15
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -26.5,
+          "top": -43.25,
+          "width": 51,
+          "height": 35.25,
+          "fill": "rgba(128, 128, 0, 0.6)",
+          "stroke": "rgba(128, 128, 0, 0.6)",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              22,
+              35
+            ],
+            [
+              "L",
+              73,
+              35
+            ],
+            [
+              "L",
+              73,
+              45
+            ],
+            [
+              "L",
+              22,
+              45
+            ],
+            [
+              "z"
+            ],
+            [
+              "M",
+              22,
+              33
+            ],
+            [
+              "C",
+              22,
+              2,
+              73,
+              2,
+              73,
+              33
+            ]
+          ]
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": -14.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": 8.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        }
+      ]
+    },
+    {
+      "type": "textbox",
+      "version": "5.2.1",
+      "left": 288.92,
+      "top": 210.19,
+      "width": 8.34,
+      "height": 16.95,
+      "fontFamily": "Helvetica, Arial, sans-serif",
+      "fontSize": 15,
+      "text": "6",
+      "textAlign": "center",
+      "styles": [],
+      "minWidth": 20,
+      "splitByGrapheme": false,
+      "relationID": 1723481350136,
+      "selectable": false
+    },
+    {
+      "type": "textbox",
+      "version": "5.2.1",
+      "left": 332.18,
+      "top": 468,
+      "width": 73.65,
+      "height": 28.25,
+      "fontFamily": "Helvetica, Arial, sans-serif",
+      "fontSize": 25,
+      "text": "PISO7",
+      "textAlign": "center",
+      "styles": [],
+      "minWidth": 20,
+      "splitByGrapheme": false,
+      "relationID": 1723481354921,
+      "selectable": false
+    },
+    {
+      "type": "group",
+      "version": "5.2.1",
+      "left": 77,
+      "top": 504.5,
+      "width": 96,
+      "height": 105,
+      "zoneType": "TABLE",
+      "relationID": 1723481362438,
+      "selectable": true,
+      "objects": [
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -40,
+          "top": -18.5,
+          "width": 67,
+          "height": 52,
+          "fill": "rgba(0, 128, 128, 0.6)",
+          "stroke": "rgba(0, 128, 128, 0.6)",
+          "strokeWidth": 12,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              14,
+              40
+            ],
+            [
+              "L",
+              14,
+              64
+            ],
+            [
+              "M",
+              81,
+              40
+            ],
+            [
+              "L",
+              81,
+              64
+            ],
+            [
+              "M",
+              38,
+              68
+            ],
+            [
+              "L",
+              38,
+              92
+            ],
+            [
+              "M",
+              57,
+              68
+            ],
+            [
+              "L",
+              57,
+              92
+            ],
+            [
+              "M",
+              28,
+              42
+            ],
+            [
+              "L",
+              28,
+              73
+            ],
+            [
+              "L",
+              67,
+              73
+            ],
+            [
+              "L",
+              67,
+              42
+            ],
+            [
+              "z"
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -17,
+          "top": -48.5,
+          "width": 32,
+          "height": 10,
+          "fill": "rgba(0, 128, 128, 0.6)",
+          "stroke": "rgba(0, 128, 128, 0.6)",
+          "strokeWidth": 2,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              32,
+              5
+            ],
+            [
+              "L",
+              37,
+              15
+            ],
+            [
+              "M",
+              64,
+              5
+            ],
+            [
+              "L",
+              58,
+              15
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -26.5,
+          "top": -43.25,
+          "width": 51,
+          "height": 35.25,
+          "fill": "rgba(0, 128, 128, 0.6)",
+          "stroke": "rgba(0, 128, 128, 0.6)",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              22,
+              35
+            ],
+            [
+              "L",
+              73,
+              35
+            ],
+            [
+              "L",
+              73,
+              45
+            ],
+            [
+              "L",
+              22,
+              45
+            ],
+            [
+              "z"
+            ],
+            [
+              "M",
+              22,
+              33
+            ],
+            [
+              "C",
+              22,
+              2,
+              73,
+              2,
+              73,
+              33
+            ]
+          ]
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": -14.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": 8.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        }
+      ]
+    },
+    {
+      "type": "textbox",
+      "version": "5.2.1",
+      "left": 120.83,
+      "top": 548.52,
+      "width": 8.34,
+      "height": 16.95,
+      "fontFamily": "Helvetica, Arial, sans-serif",
+      "fontSize": 15,
+      "text": "8",
+      "textAlign": "center",
+      "styles": [],
+      "minWidth": 20,
+      "splitByGrapheme": false,
+      "relationID": 1723481362438,
+      "selectable": false
+    },
+    {
+      "type": "group",
+      "version": "5.2.1",
+      "left": 480,
+      "top": 499.5,
+      "width": 96,
+      "height": 105,
+      "zoneType": "TABLE",
+      "relationID": 1723481365527,
+      "selectable": true,
+      "objects": [
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -40,
+          "top": -18.5,
+          "width": 67,
+          "height": 52,
+          "fill": "rgba(128, 128, 0, 0.6)",
+          "stroke": "rgba(128, 128, 0, 0.6)",
+          "strokeWidth": 12,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              14,
+              40
+            ],
+            [
+              "L",
+              14,
+              64
+            ],
+            [
+              "M",
+              81,
+              40
+            ],
+            [
+              "L",
+              81,
+              64
+            ],
+            [
+              "M",
+              38,
+              68
+            ],
+            [
+              "L",
+              38,
+              92
+            ],
+            [
+              "M",
+              57,
+              68
+            ],
+            [
+              "L",
+              57,
+              92
+            ],
+            [
+              "M",
+              28,
+              42
+            ],
+            [
+              "L",
+              28,
+              73
+            ],
+            [
+              "L",
+              67,
+              73
+            ],
+            [
+              "L",
+              67,
+              42
+            ],
+            [
+              "z"
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -17,
+          "top": -48.5,
+          "width": 32,
+          "height": 10,
+          "fill": "rgba(128, 128, 0, 0.6)",
+          "stroke": "rgba(128, 128, 0, 0.6)",
+          "strokeWidth": 2,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              32,
+              5
+            ],
+            [
+              "L",
+              37,
+              15
+            ],
+            [
+              "M",
+              64,
+              5
+            ],
+            [
+              "L",
+              58,
+              15
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -26.5,
+          "top": -43.25,
+          "width": 51,
+          "height": 35.25,
+          "fill": "rgba(128, 128, 0, 0.6)",
+          "stroke": "rgba(128, 128, 0, 0.6)",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              22,
+              35
+            ],
+            [
+              "L",
+              73,
+              35
+            ],
+            [
+              "L",
+              73,
+              45
+            ],
+            [
+              "L",
+              22,
+              45
+            ],
+            [
+              "z"
+            ],
+            [
+              "M",
+              22,
+              33
+            ],
+            [
+              "C",
+              22,
+              2,
+              73,
+              2,
+              73,
+              33
+            ]
+          ]
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": -14.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": 8.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        }
+      ]
+    },
+    {
+      "type": "textbox",
+      "version": "5.2.1",
+      "left": 523.83,
+      "top": 543.52,
+      "width": 8.34,
+      "height": 16.95,
+      "fontFamily": "Helvetica, Arial, sans-serif",
+      "fontSize": 15,
+      "text": "9",
+      "textAlign": "center",
+      "styles": [],
+      "minWidth": 20,
+      "splitByGrapheme": false,
+      "relationID": 1723481365527,
+      "selectable": false
+    },
+    {
+      "type": "group",
+      "version": "5.2.1",
+      "left": 280,
+      "top": 504.5,
+      "width": 96,
+      "height": 105,
+      "zoneType": "TABLE",
+      "relationID": 1723481366628,
+      "selectable": true,
+      "objects": [
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -40,
+          "top": -18.5,
+          "width": 67,
+          "height": 52,
+          "fill": "rgba(128, 128, 0, 0.6)",
+          "stroke": "rgba(128, 128, 0, 0.6)",
+          "strokeWidth": 12,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              14,
+              40
+            ],
+            [
+              "L",
+              14,
+              64
+            ],
+            [
+              "M",
+              81,
+              40
+            ],
+            [
+              "L",
+              81,
+              64
+            ],
+            [
+              "M",
+              38,
+              68
+            ],
+            [
+              "L",
+              38,
+              92
+            ],
+            [
+              "M",
+              57,
+              68
+            ],
+            [
+              "L",
+              57,
+              92
+            ],
+            [
+              "M",
+              28,
+              42
+            ],
+            [
+              "L",
+              28,
+              73
+            ],
+            [
+              "L",
+              67,
+              73
+            ],
+            [
+              "L",
+              67,
+              42
+            ],
+            [
+              "z"
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -17,
+          "top": -48.5,
+          "width": 32,
+          "height": 10,
+          "fill": "rgba(128, 128, 0, 0.6)",
+          "stroke": "rgba(128, 128, 0, 0.6)",
+          "strokeWidth": 2,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              32,
+              5
+            ],
+            [
+              "L",
+              37,
+              15
+            ],
+            [
+              "M",
+              64,
+              5
+            ],
+            [
+              "L",
+              58,
+              15
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -26.5,
+          "top": -43.25,
+          "width": 51,
+          "height": 35.25,
+          "fill": "rgba(128, 128, 0, 0.6)",
+          "stroke": "rgba(128, 128, 0, 0.6)",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              22,
+              35
+            ],
+            [
+              "L",
+              73,
+              35
+            ],
+            [
+              "L",
+              73,
+              45
+            ],
+            [
+              "L",
+              22,
+              45
+            ],
+            [
+              "z"
+            ],
+            [
+              "M",
+              22,
+              33
+            ],
+            [
+              "C",
+              22,
+              2,
+              73,
+              2,
+              73,
+              33
+            ]
+          ]
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": -14.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": 8.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        }
+      ]
+    },
+    {
+      "type": "textbox",
+      "version": "5.2.1",
+      "left": 319.66,
+      "top": 548.52,
+      "width": 16.68,
+      "height": 16.95,
+      "fontFamily": "Helvetica, Arial, sans-serif",
+      "fontSize": 15,
+      "text": "10",
+      "textAlign": "center",
+      "styles": [],
+      "minWidth": 20,
+      "splitByGrapheme": false,
+      "relationID": 1723481366628,
+      "selectable": false
+    },
+    {
+      "type": "group",
+      "version": "5.2.1",
+      "left": 230,
+      "top": 700.5,
+      "width": 96,
+      "height": 105,
+      "zoneType": "TABLE",
+      "relationID": 1723481367993,
+      "selectable": true,
+      "objects": [
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -40,
+          "top": -18.5,
+          "width": 67,
+          "height": 52,
+          "fill": "rgba(128, 128, 0, 0.6)",
+          "stroke": "rgba(128, 128, 0, 0.6)",
+          "strokeWidth": 12,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              14,
+              40
+            ],
+            [
+              "L",
+              14,
+              64
+            ],
+            [
+              "M",
+              81,
+              40
+            ],
+            [
+              "L",
+              81,
+              64
+            ],
+            [
+              "M",
+              38,
+              68
+            ],
+            [
+              "L",
+              38,
+              92
+            ],
+            [
+              "M",
+              57,
+              68
+            ],
+            [
+              "L",
+              57,
+              92
+            ],
+            [
+              "M",
+              28,
+              42
+            ],
+            [
+              "L",
+              28,
+              73
+            ],
+            [
+              "L",
+              67,
+              73
+            ],
+            [
+              "L",
+              67,
+              42
+            ],
+            [
+              "z"
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -17,
+          "top": -48.5,
+          "width": 32,
+          "height": 10,
+          "fill": "rgba(128, 128, 0, 0.6)",
+          "stroke": "rgba(128, 128, 0, 0.6)",
+          "strokeWidth": 2,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              32,
+              5
+            ],
+            [
+              "L",
+              37,
+              15
+            ],
+            [
+              "M",
+              64,
+              5
+            ],
+            [
+              "L",
+              58,
+              15
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -26.5,
+          "top": -43.25,
+          "width": 51,
+          "height": 35.25,
+          "fill": "rgba(128, 128, 0, 0.6)",
+          "stroke": "rgba(128, 128, 0, 0.6)",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              22,
+              35
+            ],
+            [
+              "L",
+              73,
+              35
+            ],
+            [
+              "L",
+              73,
+              45
+            ],
+            [
+              "L",
+              22,
+              45
+            ],
+            [
+              "z"
+            ],
+            [
+              "M",
+              22,
+              33
+            ],
+            [
+              "C",
+              22,
+              2,
+              73,
+              2,
+              73,
+              33
+            ]
+          ]
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": -14.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": 8.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        }
+      ]
+    },
+    {
+      "type": "textbox",
+      "version": "5.2.1",
+      "left": 270.21,
+      "top": 744.52,
+      "width": 15.57,
+      "height": 16.95,
+      "fontFamily": "Helvetica, Arial, sans-serif",
+      "fontSize": 15,
+      "text": "11",
+      "textAlign": "center",
+      "styles": [],
+      "minWidth": 20,
+      "splitByGrapheme": false,
+      "relationID": 1723481367993,
+      "selectable": false
+    },
+    {
+      "type": "group",
+      "version": "5.2.1",
+      "left": 476,
+      "top": 687.5,
+      "width": 96,
+      "height": 105,
+      "zoneType": "TABLE",
+      "relationID": 1723481369411,
+      "selectable": true,
+      "objects": [
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -40,
+          "top": -18.5,
+          "width": 67,
+          "height": 52,
+          "fill": "rgba(0, 128, 128, 0.6)",
+          "stroke": "rgba(0, 128, 128, 0.6)",
+          "strokeWidth": 12,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              14,
+              40
+            ],
+            [
+              "L",
+              14,
+              64
+            ],
+            [
+              "M",
+              81,
+              40
+            ],
+            [
+              "L",
+              81,
+              64
+            ],
+            [
+              "M",
+              38,
+              68
+            ],
+            [
+              "L",
+              38,
+              92
+            ],
+            [
+              "M",
+              57,
+              68
+            ],
+            [
+              "L",
+              57,
+              92
+            ],
+            [
+              "M",
+              28,
+              42
+            ],
+            [
+              "L",
+              28,
+              73
+            ],
+            [
+              "L",
+              67,
+              73
+            ],
+            [
+              "L",
+              67,
+              42
+            ],
+            [
+              "z"
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -17,
+          "top": -48.5,
+          "width": 32,
+          "height": 10,
+          "fill": "rgba(0, 128, 128, 0.6)",
+          "stroke": "rgba(0, 128, 128, 0.6)",
+          "strokeWidth": 2,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              32,
+              5
+            ],
+            [
+              "L",
+              37,
+              15
+            ],
+            [
+              "M",
+              64,
+              5
+            ],
+            [
+              "L",
+              58,
+              15
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -26.5,
+          "top": -43.25,
+          "width": 51,
+          "height": 35.25,
+          "fill": "rgba(0, 128, 128, 0.6)",
+          "stroke": "rgba(0, 128, 128, 0.6)",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              22,
+              35
+            ],
+            [
+              "L",
+              73,
+              35
+            ],
+            [
+              "L",
+              73,
+              45
+            ],
+            [
+              "L",
+              22,
+              45
+            ],
+            [
+              "z"
+            ],
+            [
+              "M",
+              22,
+              33
+            ],
+            [
+              "C",
+              22,
+              2,
+              73,
+              2,
+              73,
+              33
+            ]
+          ]
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": -14.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": 8.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        }
+      ]
+    },
+    {
+      "type": "textbox",
+      "version": "5.2.1",
+      "left": 515.66,
+      "top": 731.52,
+      "width": 16.68,
+      "height": 16.95,
+      "fontFamily": "Helvetica, Arial, sans-serif",
+      "fontSize": 15,
+      "text": "12",
+      "textAlign": "center",
+      "styles": [],
+      "minWidth": 20,
+      "splitByGrapheme": false,
+      "relationID": 1723481369411,
+      "selectable": false
+    },
+    {
+      "type": "group",
+      "version": "5.2.1",
+      "left": 93,
+      "top": 675.5,
+      "width": 96,
+      "height": 105,
+      "zoneType": "TABLE",
+      "relationID": 1723481370706,
+      "selectable": true,
+      "objects": [
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -40,
+          "top": -18.5,
+          "width": 67,
+          "height": 52,
+          "fill": "rgba(0, 128, 128, 0.6)",
+          "stroke": "rgba(0, 128, 128, 0.6)",
+          "strokeWidth": 12,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              14,
+              40
+            ],
+            [
+              "L",
+              14,
+              64
+            ],
+            [
+              "M",
+              81,
+              40
+            ],
+            [
+              "L",
+              81,
+              64
+            ],
+            [
+              "M",
+              38,
+              68
+            ],
+            [
+              "L",
+              38,
+              92
+            ],
+            [
+              "M",
+              57,
+              68
+            ],
+            [
+              "L",
+              57,
+              92
+            ],
+            [
+              "M",
+              28,
+              42
+            ],
+            [
+              "L",
+              28,
+              73
+            ],
+            [
+              "L",
+              67,
+              73
+            ],
+            [
+              "L",
+              67,
+              42
+            ],
+            [
+              "z"
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -17,
+          "top": -48.5,
+          "width": 32,
+          "height": 10,
+          "fill": "rgba(0, 128, 128, 0.6)",
+          "stroke": "rgba(0, 128, 128, 0.6)",
+          "strokeWidth": 2,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              32,
+              5
+            ],
+            [
+              "L",
+              37,
+              15
+            ],
+            [
+              "M",
+              64,
+              5
+            ],
+            [
+              "L",
+              58,
+              15
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -26.5,
+          "top": -43.25,
+          "width": 51,
+          "height": 35.25,
+          "fill": "rgba(0, 128, 128, 0.6)",
+          "stroke": "rgba(0, 128, 128, 0.6)",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              22,
+              35
+            ],
+            [
+              "L",
+              73,
+              35
+            ],
+            [
+              "L",
+              73,
+              45
+            ],
+            [
+              "L",
+              22,
+              45
+            ],
+            [
+              "z"
+            ],
+            [
+              "M",
+              22,
+              33
+            ],
+            [
+              "C",
+              22,
+              2,
+              73,
+              2,
+              73,
+              33
+            ]
+          ]
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": -14.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": 8.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        }
+      ]
+    },
+    {
+      "type": "textbox",
+      "version": "5.2.1",
+      "left": 132.66,
+      "top": 719.52,
+      "width": 16.68,
+      "height": 16.95,
+      "fontFamily": "Helvetica, Arial, sans-serif",
+      "fontSize": 15,
+      "text": "13",
+      "textAlign": "center",
+      "styles": [],
+      "minWidth": 20,
+      "splitByGrapheme": false,
+      "relationID": 1723481370706,
+      "selectable": false
+    },
+    {
+      "type": "textbox",
+      "version": "5.2.1",
+      "left": 343.23,
+      "top": 960,
+      "width": 87.55,
+      "height": 28.25,
+      "fontFamily": "Helvetica, Arial, sans-serif",
+      "fontSize": 25,
+      "text": "PISO14",
+      "textAlign": "center",
+      "styles": [],
+      "minWidth": 20,
+      "splitByGrapheme": false,
+      "relationID": 1723481375079,
+      "selectable": false
+    },
+    {
+      "type": "group",
+      "version": "5.2.1",
+      "left": 124,
+      "top": 1042.5,
+      "width": 96,
+      "height": 105,
+      "zoneType": "TABLE",
+      "relationID": 1723481383449,
+      "selectable": true,
+      "objects": [
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -40,
+          "top": -18.5,
+          "width": 67,
+          "height": 52,
+          "fill": "rgba(128, 128, 0, 0.6)",
+          "stroke": "rgba(128, 128, 0, 0.6)",
+          "strokeWidth": 12,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              14,
+              40
+            ],
+            [
+              "L",
+              14,
+              64
+            ],
+            [
+              "M",
+              81,
+              40
+            ],
+            [
+              "L",
+              81,
+              64
+            ],
+            [
+              "M",
+              38,
+              68
+            ],
+            [
+              "L",
+              38,
+              92
+            ],
+            [
+              "M",
+              57,
+              68
+            ],
+            [
+              "L",
+              57,
+              92
+            ],
+            [
+              "M",
+              28,
+              42
+            ],
+            [
+              "L",
+              28,
+              73
+            ],
+            [
+              "L",
+              67,
+              73
+            ],
+            [
+              "L",
+              67,
+              42
+            ],
+            [
+              "z"
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -17,
+          "top": -48.5,
+          "width": 32,
+          "height": 10,
+          "fill": "rgba(128, 128, 0, 0.6)",
+          "stroke": "rgba(128, 128, 0, 0.6)",
+          "strokeWidth": 2,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              32,
+              5
+            ],
+            [
+              "L",
+              37,
+              15
+            ],
+            [
+              "M",
+              64,
+              5
+            ],
+            [
+              "L",
+              58,
+              15
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -26.5,
+          "top": -43.25,
+          "width": 51,
+          "height": 35.25,
+          "fill": "rgba(128, 128, 0, 0.6)",
+          "stroke": "rgba(128, 128, 0, 0.6)",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              22,
+              35
+            ],
+            [
+              "L",
+              73,
+              35
+            ],
+            [
+              "L",
+              73,
+              45
+            ],
+            [
+              "L",
+              22,
+              45
+            ],
+            [
+              "z"
+            ],
+            [
+              "M",
+              22,
+              33
+            ],
+            [
+              "C",
+              22,
+              2,
+              73,
+              2,
+              73,
+              33
+            ]
+          ]
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": -14.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": 8.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        }
+      ]
+    },
+    {
+      "type": "textbox",
+      "version": "5.2.1",
+      "left": 163.66,
+      "top": 1086.53,
+      "width": 16.68,
+      "height": 16.95,
+      "fontFamily": "Helvetica, Arial, sans-serif",
+      "fontSize": 15,
+      "text": "15",
+      "textAlign": "center",
+      "styles": [],
+      "minWidth": 20,
+      "splitByGrapheme": false,
+      "relationID": 1723481383449,
+      "selectable": false
+    },
+    {
+      "type": "group",
+      "version": "5.2.1",
+      "left": 282,
+      "top": 1037.5,
+      "width": 96,
+      "height": 105,
+      "zoneType": "TABLE",
+      "relationID": 1723481384927,
+      "selectable": true,
+      "objects": [
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -40,
+          "top": -18.5,
+          "width": 67,
+          "height": 52,
+          "fill": "rgba(0, 128, 0, 0.6)",
+          "stroke": "rgba(0, 128, 0, 0.6)",
+          "strokeWidth": 12,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              14,
+              40
+            ],
+            [
+              "L",
+              14,
+              64
+            ],
+            [
+              "M",
+              81,
+              40
+            ],
+            [
+              "L",
+              81,
+              64
+            ],
+            [
+              "M",
+              38,
+              68
+            ],
+            [
+              "L",
+              38,
+              92
+            ],
+            [
+              "M",
+              57,
+              68
+            ],
+            [
+              "L",
+              57,
+              92
+            ],
+            [
+              "M",
+              28,
+              42
+            ],
+            [
+              "L",
+              28,
+              73
+            ],
+            [
+              "L",
+              67,
+              73
+            ],
+            [
+              "L",
+              67,
+              42
+            ],
+            [
+              "z"
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -17,
+          "top": -48.5,
+          "width": 32,
+          "height": 10,
+          "fill": "rgba(0, 128, 0, 0.6)",
+          "stroke": "rgba(0, 128, 0, 0.6)",
+          "strokeWidth": 2,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              32,
+              5
+            ],
+            [
+              "L",
+              37,
+              15
+            ],
+            [
+              "M",
+              64,
+              5
+            ],
+            [
+              "L",
+              58,
+              15
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -26.5,
+          "top": -43.25,
+          "width": 51,
+          "height": 35.25,
+          "fill": "rgba(0, 128, 0, 0.6)",
+          "stroke": "rgba(0, 128, 0, 0.6)",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              22,
+              35
+            ],
+            [
+              "L",
+              73,
+              35
+            ],
+            [
+              "L",
+              73,
+              45
+            ],
+            [
+              "L",
+              22,
+              45
+            ],
+            [
+              "z"
+            ],
+            [
+              "M",
+              22,
+              33
+            ],
+            [
+              "C",
+              22,
+              2,
+              73,
+              2,
+              73,
+              33
+            ]
+          ]
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": -14.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": 8.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        }
+      ]
+    },
+    {
+      "type": "textbox",
+      "version": "5.2.1",
+      "left": 321.66,
+      "top": 1081.53,
+      "width": 16.68,
+      "height": 16.95,
+      "fontFamily": "Helvetica, Arial, sans-serif",
+      "fontSize": 15,
+      "text": "16",
+      "textAlign": "center",
+      "styles": [],
+      "minWidth": 20,
+      "splitByGrapheme": false,
+      "relationID": 1723481384927,
+      "selectable": false
+    },
+    {
+      "type": "group",
+      "version": "5.2.1",
+      "left": 505,
+      "top": 1035.5,
+      "width": 96,
+      "height": 105,
+      "zoneType": "TABLE",
+      "relationID": 1723481386095,
+      "selectable": true,
+      "objects": [
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -40,
+          "top": -18.5,
+          "width": 67,
+          "height": 52,
+          "fill": "rgba(0, 128, 128, 0.6)",
+          "stroke": "rgba(0, 128, 128, 0.6)",
+          "strokeWidth": 12,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              14,
+              40
+            ],
+            [
+              "L",
+              14,
+              64
+            ],
+            [
+              "M",
+              81,
+              40
+            ],
+            [
+              "L",
+              81,
+              64
+            ],
+            [
+              "M",
+              38,
+              68
+            ],
+            [
+              "L",
+              38,
+              92
+            ],
+            [
+              "M",
+              57,
+              68
+            ],
+            [
+              "L",
+              57,
+              92
+            ],
+            [
+              "M",
+              28,
+              42
+            ],
+            [
+              "L",
+              28,
+              73
+            ],
+            [
+              "L",
+              67,
+              73
+            ],
+            [
+              "L",
+              67,
+              42
+            ],
+            [
+              "z"
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -17,
+          "top": -48.5,
+          "width": 32,
+          "height": 10,
+          "fill": "rgba(0, 128, 128, 0.6)",
+          "stroke": "rgba(0, 128, 128, 0.6)",
+          "strokeWidth": 2,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              32,
+              5
+            ],
+            [
+              "L",
+              37,
+              15
+            ],
+            [
+              "M",
+              64,
+              5
+            ],
+            [
+              "L",
+              58,
+              15
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -26.5,
+          "top": -43.25,
+          "width": 51,
+          "height": 35.25,
+          "fill": "rgba(0, 128, 128, 0.6)",
+          "stroke": "rgba(0, 128, 128, 0.6)",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              22,
+              35
+            ],
+            [
+              "L",
+              73,
+              35
+            ],
+            [
+              "L",
+              73,
+              45
+            ],
+            [
+              "L",
+              22,
+              45
+            ],
+            [
+              "z"
+            ],
+            [
+              "M",
+              22,
+              33
+            ],
+            [
+              "C",
+              22,
+              2,
+              73,
+              2,
+              73,
+              33
+            ]
+          ]
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": -14.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": 8.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        }
+      ]
+    },
+    {
+      "type": "textbox",
+      "version": "5.2.1",
+      "left": 544.66,
+      "top": 1079.53,
+      "width": 16.68,
+      "height": 16.95,
+      "fontFamily": "Helvetica, Arial, sans-serif",
+      "fontSize": 15,
+      "text": "17",
+      "textAlign": "center",
+      "styles": [],
+      "minWidth": 20,
+      "splitByGrapheme": false,
+      "relationID": 1723481386095,
+      "selectable": false
+    },
+    {
+      "type": "rect",
+      "version": "5.2.1",
+      "left": 72,
+      "top": 53,
+      "width": 50,
+      "height": 50,
+      "fill": "rgba(0, 128, 0, 0.1)",
+      "scaleX": 5.5,
+      "scaleY": 3.94,
+      "zoneType": "AREA",
+      "relationID": 1723481467487,
+      "selectable": true
+    },
+    {
+      "type": "textbox",
+      "version": "5.2.1",
+      "left": 173.89,
+      "top": 33,
+      "width": 76.71,
+      "height": 22.6,
+      "fontFamily": "Helvetica, Arial, sans-serif",
+      "fontSize": 20,
+      "text": "AREA18",
+      "textAlign": "center",
+      "styles": [],
+      "minWidth": 20,
+      "splitByGrapheme": false,
+      "relationID": 1723481467487,
+      "selectable": false
+    },
+    {
+      "type": "rect",
+      "version": "5.2.1",
+      "left": 524,
+      "top": 64,
+      "width": 50,
+      "height": 50,
+      "fill": "rgba(0, 128, 0, 0.1)",
+      "scaleX": 2.49,
+      "scaleY": 3.75,
+      "zoneType": "AREA",
+      "relationID": 1723481642268,
+      "selectable": true
+    },
+    {
+      "type": "textbox",
+      "version": "5.2.1",
+      "left": 549.14,
+      "top": 44,
+      "width": 76.71,
+      "height": 22.6,
+      "fontFamily": "Helvetica, Arial, sans-serif",
+      "fontSize": 20,
+      "text": "Patio",
+      "textAlign": "center",
+      "styles": [],
+      "minWidth": 20,
+      "splitByGrapheme": false,
+      "relationID": 1723481642268,
+      "selectable": false
+    },
+    {
+      "type": "group",
+      "version": "5.2.1",
+      "left": 425,
+      "top": 282.5,
+      "width": 96,
+      "height": 105,
+      "zoneType": "TABLE",
+      "relationID": 1723481666327,
+      "selectable": true,
+      "objects": [
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -40,
+          "top": -18.5,
+          "width": 67,
+          "height": 52,
+          "fill": "rgba(0, 128, 128, 0.6)",
+          "stroke": "rgba(0, 128, 128, 0.6)",
+          "strokeWidth": 12,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              14,
+              40
+            ],
+            [
+              "L",
+              14,
+              64
+            ],
+            [
+              "M",
+              81,
+              40
+            ],
+            [
+              "L",
+              81,
+              64
+            ],
+            [
+              "M",
+              38,
+              68
+            ],
+            [
+              "L",
+              38,
+              92
+            ],
+            [
+              "M",
+              57,
+              68
+            ],
+            [
+              "L",
+              57,
+              92
+            ],
+            [
+              "M",
+              28,
+              42
+            ],
+            [
+              "L",
+              28,
+              73
+            ],
+            [
+              "L",
+              67,
+              73
+            ],
+            [
+              "L",
+              67,
+              42
+            ],
+            [
+              "z"
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -17,
+          "top": -48.5,
+          "width": 32,
+          "height": 10,
+          "fill": "rgba(0, 128, 128, 0.6)",
+          "stroke": "rgba(0, 128, 128, 0.6)",
+          "strokeWidth": 2,
+          "strokeLineCap": "round",
+          "strokeLineJoin": "round",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              32,
+              5
+            ],
+            [
+              "L",
+              37,
+              15
+            ],
+            [
+              "M",
+              64,
+              5
+            ],
+            [
+              "L",
+              58,
+              15
+            ]
+          ]
+        },
+        {
+          "type": "path",
+          "version": "5.2.1",
+          "left": -26.5,
+          "top": -43.25,
+          "width": 51,
+          "height": 35.25,
+          "fill": "rgba(0, 128, 128, 0.6)",
+          "stroke": "rgba(0, 128, 128, 0.6)",
+          "selectable": true,
+          "path": [
+            [
+              "M",
+              22,
+              35
+            ],
+            [
+              "L",
+              73,
+              35
+            ],
+            [
+              "L",
+              73,
+              45
+            ],
+            [
+              "L",
+              22,
+              45
+            ],
+            [
+              "z"
+            ],
+            [
+              "M",
+              22,
+              33
+            ],
+            [
+              "C",
+              22,
+              2,
+              73,
+              2,
+              73,
+              33
+            ]
+          ]
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": -14.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        },
+        {
+          "type": "circle",
+          "version": "5.2.1",
+          "left": 8.5,
+          "top": -33,
+          "width": 4,
+          "height": 4,
+          "fill": "#FFF",
+          "radius": 2,
+          "startAngle": 0,
+          "endAngle": 360,
+          "selectable": true
+        }
+      ]
+    },
+    {
+      "type": "textbox",
+      "version": "5.2.1",
+      "left": 464.66,
+      "top": 326.52,
+      "width": 16.68,
+      "height": 16.95,
+      "fontFamily": "Helvetica, Arial, sans-serif",
+      "fontSize": 15,
+      "text": "20",
+      "textAlign": "center",
+      "styles": [],
+      "minWidth": 20,
+      "splitByGrapheme": false,
+      "relationID": 1723481666327,
+      "selectable": false
+    },
+    {
+      "type": "rect",
+      "version": "5.2.1",
+      "left": 93,
+      "top": 281,
+      "width": 50,
+      "height": 50,
+      "fill": "rgba(0, 128, 0, 0.1)",
+      "scaleX": 8.65,
+      "scaleY": 2.94,
+      "zoneType": "AREA",
+      "relationID": 1723481793702,
+      "selectable": true
+    },
+    {
+      "type": "textbox",
+      "version": "5.2.1",
+      "left": 275.14,
+      "top": 261,
+      "width": 76.71,
+      "height": 22.6,
+      "fontFamily": "Helvetica, Arial, sans-serif",
+      "fontSize": 20,
+      "text": "salon",
+      "textAlign": "center",
+      "styles": [],
+      "minWidth": 20,
+      "splitByGrapheme": false,
+      "relationID": 1723481793702,
+      "selectable": false
+    }
+  ]
+}

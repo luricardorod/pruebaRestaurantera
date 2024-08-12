@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,24 +8,61 @@
     <script src="../fabric.js"></script>
   </head>
   <body>
-    <div id="app"></div>
-    <link rel="stylesheet" href="style.css">
-
-    <div>
-      <div id="controls">
-        <div class="rectangleControl" id="floor" draggable="true" style="background-color: blue;">Piso</div>
-        <div class="rectangleControl" id="area" draggable="true" style="background-color: green;">Area</div>
+    <link rel="stylesheet" href="style.css" />
+    <div class="mainCanvas">
+      <div class="sectionCanvas">
+        <canvas id="c1" width="800" height="1600"></canvas>
       </div>
-      <canvas id="c1" width="800" height="600"></canvas>
-      <input type="text" id="myText" value="Mickey">
-      <button onclick="updateGroup()">Update</button>
-      <button onclick="saveJSON()">Guardar</button>
-      <button onclick="removeSelected()">Eliminar</button>
-
-
+      <div class="tools">
+        <header id="editSelection" class="card">
+          <p>Elemento seleccionado</p>
+          <label for="typeZone">Tipo de zona:</label>
+          <select id="typeZone" name="select">
+            <option value="value1">Value 1</option>
+            <option value="value2" selected>Value 2</option>
+            <option value="value3">Value 3</option>
+          </select>
+          <input type="text" id="myText" value="Mickey" />
+          <button class="button-3" role="button" onclick="updateGroup()">
+            Update
+          </button>
+          <footer class="footerEnd">
+            <button class="button-3" role="button" onclick="removeSelected()">
+              Eliminar
+            </button>
+          </footer>
+        </header>
+        <div class="card" style="flex: 1;">
+          <p>Herramientas</p>
+          <div id="controls">
+            <div
+              class="rectangleControl"
+              id="floor"
+              draggable="true"
+              style="background-color: blue"
+            >
+              Piso
+            </div>
+            <div
+              class="rectangleControl"
+              id="area"
+              draggable="true"
+              style="background-color: green"
+            >
+              Area
+            </div>
+          </div>
+        </div>
+        <footer class="footerEnd">
+          <button class="button-3" role="button" onclick="loadJSON()">
+            cargar
+          </button>
+          <button class="button-3" role="button" onclick="saveJSON()">
+            Guardar
+          </button>
+        </footer>
+      </div>
     </div>
-
   </body>
   <script type="text/javascript" src="/main.js"></script>
-
 </html>

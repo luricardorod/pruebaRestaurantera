@@ -9,26 +9,168 @@ const ZONE_TYPE = {
   table: 'TABLE'
 }
 const FONT_SIZE_TABLES = 15
+const ZONES_AVAILABLE = [
+  {
+    name: 'Barra'
+  },
+  {
+    name: 'Planta Alta'
+  },
+  {
+    name: 'Salón'
+  },
+  {
+    name: 'Bar'
+  },
+  {
+    name: 'Terraza'
+  },
+  {
+    name: 'Otro'
+  }
+]
 const TABLES_OPTIONS = [
   {
     id: 'table1',
     color: 'rgba(0, 128, 0, 0.6)',
-    name: 'Alta',
+    name: 'Alta XX',
     src: './mesas/android.svg'
   },
   {
     id: 'table2',
     color: 'rgba(128, 128, 0, 0.6)',
-    name: 'Sala',
+    name: 'Alta XX',
     src: './mesas/android.svg'
   },
   {
     id: 'table3',
     color: 'rgba(0, 128, 128, 0.6)',
-    name: 'Barra',
+    name: 'Alta XX',
+    src: './mesas/android.svg'
+  },
+  {
+    id: 'table1',
+    color: 'rgba(0, 128, 0, 0.6)',
+    name: 'Alta XX',
+    src: './mesas/android.svg'
+  },
+  {
+    id: 'table2',
+    color: 'rgba(128, 128, 0, 0.6)',
+    name: 'Alta XX',
+    src: './mesas/android.svg'
+  },
+  {
+    id: 'table1',
+    color: 'rgba(0, 128, 0, 0.6)',
+    name: 'Alta XX',
+    src: './mesas/android.svg'
+  },
+  {
+    id: 'table2',
+    color: 'rgba(128, 128, 0, 0.6)',
+    name: 'Alta XX',
+    src: './mesas/android.svg'
+  },
+  {
+    id: 'table3',
+    color: 'rgba(0, 128, 128, 0.6)',
+    name: 'Alta XX',
+    src: './mesas/android.svg'
+  },
+  {
+    id: 'table1',
+    color: 'rgba(0, 128, 0, 0.6)',
+    name: 'Alta XX',
+    src: './mesas/android.svg'
+  },
+  {
+    id: 'table2',
+    color: 'rgba(128, 128, 0, 0.6)',
+    name: 'Alta XX',
+    src: './mesas/android.svg'
+  },
+  {
+    id: 'table1',
+    color: 'rgba(0, 128, 0, 0.6)',
+    name: 'Alta XX',
+    src: './mesas/android.svg'
+  },
+  {
+    id: 'table2',
+    color: 'rgba(128, 128, 0, 0.6)',
+    name: 'Alta XX',
+    src: './mesas/android.svg'
+  },
+  {
+    id: 'table3',
+    color: 'rgba(0, 128, 128, 0.6)',
+    name: 'Alta XX',
+    src: './mesas/android.svg'
+  },
+  {
+    id: 'table1',
+    color: 'rgba(0, 128, 0, 0.6)',
+    name: 'Alta XX',
+    src: './mesas/android.svg'
+  },
+  {
+    id: 'table2',
+    color: 'rgba(128, 128, 0, 0.6)',
+    name: 'Alta XX',
+    src: './mesas/android.svg'
+  },
+  {
+    id: 'table1',
+    color: 'rgba(0, 128, 0, 0.6)',
+    name: 'Alta XX',
+    src: './mesas/android.svg'
+  },
+  {
+    id: 'table2',
+    color: 'rgba(128, 128, 0, 0.6)',
+    name: 'Alta XX',
+    src: './mesas/android.svg'
+  },
+  {
+    id: 'table3',
+    color: 'rgba(0, 128, 128, 0.6)',
+    name: 'Alta XX',
+    src: './mesas/android.svg'
+  },
+  {
+    id: 'table1',
+    color: 'rgba(0, 128, 0, 0.6)',
+    name: 'Alta XX',
+    src: './mesas/android.svg'
+  },
+  {
+    id: 'table2',
+    color: 'rgba(128, 128, 0, 0.6)',
+    name: 'Alta XX',
     src: './mesas/android.svg'
   }
 ]
+const loadJSON = function () {
+  const map = localStorage.getItem('map')
+
+  canvas.loadFromJSON(map, function () {
+    console.log(canvas.getObjects())
+    const objects = canvas.getObjects()
+    const textIndexes = {}
+    objects.forEach((object, index) => {
+      if (object.type === 'textbox') {
+        textIndexes[object.relationID] = index
+      }
+    })
+    objects.forEach((object, index) => {
+      if (object.type !== 'textbox') {
+        object.set('textObject', objects[textIndexes[object.relationID]])
+      }
+    })
+    canvas.renderAll()
+  })
+}
 
 const updateGroup = () => {
   const activeObj = canvas.getActiveObject()
@@ -36,52 +178,57 @@ const updateGroup = () => {
 
   if (textObject) {
     textObject.set('text', document.getElementById('myText').value)
+    udpatePositionText(activeObj)
     canvas.renderAll()
   }
 }
 
 const saveJSON = () => {
   canvas.includeDefaultValues = false
-  console.log(JSON.stringify(canvas.toJSON(), null, '  '))
+  console.log(
+    canvas.toJSON(['zoneType', 'relationID', 'selectable', 'others...'])
+  )
+  localStorage.setItem(
+    'map',
+    JSON.stringify(
+      canvas.toJSON(['zoneType', 'relationID', 'selectable', 'others...'])
+    )
+  )
 }
 
-function loadAndChangeSVGColor (url, color, id) {
-  fetch(url)
+function loadAndChangeSVGColor ({ id, color, name, src }) {
+  fetch(src)
     .then(response => {
-      console.log(response)
       return response.text()
     })
     .then(svgText => {
-      console.log(svgText)
-
-      // Crear un contenedor temporal para el SVG
       const tempContainer = document.createElement('div')
-
       tempContainer.innerHTML = svgText
-
-      // Obtener el elemento SVG
       const svgElement = tempContainer.querySelector('svg')
-      svgElement.setAttribute("height", RECTANGLE_SIZE_CONTROLS)
-
-      // Cambiar el color de todos los elementos de tipo path en el SVG
+      svgElement.setAttribute('height', RECTANGLE_SIZE_CONTROLS)
       const paths = svgElement.querySelectorAll('path')
       paths.forEach(path => {
-        path.setAttribute('fill', color) // Cambiar 'fill' por el color deseado
+        path.setAttribute('fill', color)
       })
       tempContainer.addEventListener('dragstart', dragElement)
       tempContainer.id = id
       tempContainer.draggable = true
+      tempContainer.classList.add('tableControl')
 
-      // Insertar el SVG en la sección "controles"
+      const label = document.createElement('label')
+      label.setAttribute('for', id)
+      label.innerHTML = name
+      tempContainer.appendChild(label)
       document.getElementById('controls').appendChild(tempContainer)
     })
     .catch(error => console.error('Error al cargar el SVG:', error))
 }
-
+function dragElement (e) {
+  e.dataTransfer.setData('id', e.target.id)
+}
 const createControls = () => {
-  const controls = document.getElementById('controls')
-  TABLES_OPTIONS.forEach(option => {
-    loadAndChangeSVGColor(option.src, option.color, option.id)
+  TABLES_OPTIONS.forEach(table => {
+    loadAndChangeSVGColor(table)
   })
 
   const blocks = document.getElementsByClassName('rectangleControl')
@@ -100,6 +247,16 @@ function observe (eventName) {
       dropElement(opt.e)
     }
     if (
+      eventName === 'object:scaling' ||
+      eventName === 'object:moving' ||
+      eventName === 'object:rotating'
+    ) {
+      console.log(opt)
+      console.log(opt.target.textObject)
+
+      udpatePositionText(opt.target)
+    }
+    if (
       eventName === 'selection:updated' ||
       eventName === 'selection:created'
     ) {
@@ -107,6 +264,13 @@ function observe (eventName) {
     }
   })
 }
+
+observe('drop')
+observe('selection:created')
+observe('selection:updated')
+observe('object:scaling')
+observe('object:moving')
+observe('object:rotating')
 
 const showSelection = opt => {
   const activeObj = canvas.getActiveObject()
@@ -119,6 +283,57 @@ const showSelection = opt => {
   document.getElementById('myText').value = textObject.text
 }
 
+async function dropElement (e) {
+  e.preventDefault()
+  const id = e.dataTransfer.getData('id')
+  console.log(id)
+  let newObject
+  let label = ''
+  let zoneType = ''
+  let fontSize = ''
+
+  if (id === 'area') {
+    newObject = createRectangle({
+      x: e.layerX,
+      y: e.layerY,
+      color: 'rgba(0, 128, 0, 0.1)'
+    })
+    zoneType = ZONE_TYPE.area
+    label = zoneType + counter.toString()
+    fontSize = FONT_SIZE_AREA
+  } else if (id === 'floor') {
+    newObject = createRectangle({
+      x: e.layerX,
+      y: e.layerY,
+      color: 'rgba(0, 255, 0, 0.1)'
+    })
+    zoneType = ZONE_TYPE.floor
+    label = zoneType + counter.toString()
+    fontSize = FONT_SIZE_FLOOR
+  } else {
+    const data = TABLES_OPTIONS.find(table => table.id === id)
+    newObject = await loadSVGAsync({
+      svgURL: data.src,
+      color: data.color,
+      x: e.layerX,
+      y: e.layerY
+    })
+    zoneType = ZONE_TYPE.table
+    label = counter.toString()
+    fontSize = FONT_SIZE_TABLES
+  }
+  const relationID = Date.now()
+  const text = createText({ label, fontSize })
+  text.set('relationID', relationID)
+  newObject.set('textObject', text)
+  newObject.set('zoneType', zoneType)
+  newObject.set('relationID', relationID)
+  udpatePositionText(newObject)
+  counter++
+  canvas.add(newObject, text)
+  canvas.renderAll()
+}
+
 function getRectBounds (rect) {
   const coords = rect.getCoords()
   const topMost = Math.min(coords[0].y, coords[1].y, coords[2].y, coords[3].y)
@@ -126,139 +341,62 @@ function getRectBounds (rect) {
   return { topMost, centerX }
 }
 
-observe('drop:before')
-observe('drop')
-observe('dragenter')
-observe('dragleave')
-observe('selection:created')
-observe('selection:updated')
-
-function dragElement (e) {
-  e.dataTransfer.setData('id', e.target.id)
-}
-
-const udpateText = rectangle => {
-  const textObject = rectangle.textObject
-  const { topMost, centerX } = getRectBounds(rectangle)
-
-  textObject.set({
-    left: centerX - textObject.width * 0.5,
-    top: topMost - textObject.fontSize
-  })
-
-  canvas.renderAll()
-}
-const centerTextInSVG = svg => {
-  const textObject = svg.textObject
-  textObject.set({
-    left: svg.getCenterPoint().x - textObject.width * 0.5,
-    top: svg.getCenterPoint().y - textObject.height * 0.5
-  })
-  textObject.bringToFront()
-
-  canvas.renderAll()
-}
-const createSVG = ({ svgURL, color, x, y }) => {
-  fabric.loadSVGFromURL(svgURL, function (objects) {
-    const svg = fabric.util.groupSVGElements(objects, {
+const udpatePositionText = object => {
+  const textObject = object.textObject
+  if (object.zoneType === ZONE_TYPE.table) {
+    textObject.set({
+      left: object.getCenterPoint().x - textObject.width * 0.5,
+      top: object.getCenterPoint().y - textObject.height * 0.5
     })
-    console.log(svg.width)
-    svg.set({
-      left: x - svg.width * 0.5,
-      top: y - svg.height * 0.5
+  } else {
+    const { topMost, centerX } = getRectBounds(object)
+    textObject.set({
+      left: centerX - textObject.width * 0.5,
+      top: topMost - textObject.fontSize
     })
-    svg.getObjects().forEach(function (obj) {
-      if (obj.type === 'path') {
-        obj.set('fill', color)
-        obj.set('stroke', color)
+  }
+}
+
+function loadSVGAsync ({ svgURL, color, x, y }) {
+  return new Promise((resolve, reject) => {
+    fabric.loadSVGFromURL(svgURL, (objects, options) => {
+      if (objects) {
+        const svg = fabric.util.groupSVGElements(objects, options)
+        svg.set({
+          left: x - svg.width * 0.5,
+          top: y - svg.height * 0.5
+        })
+        svg.getObjects().forEach(function (obj) {
+          if (obj.type === 'path') {
+            obj.set('fill', color)
+            obj.set('stroke', color)
+          }
+        })
+        resolve(svg)
+      } else {
+        reject(new Error('Error al cargar el SVG'))
       }
     })
-    const text = new fabric.Textbox(counter.toString(), {
-      fontSize: FONT_SIZE_TABLES,
-      textAlign: 'center',
-      selectable: false,
-      fill: 'white'
-    })
-    text.set({
-      left: x - text.width * 0.5,
-      top: y - text.height * 0.5
-    })
-    text.bringToFront()
-    counter++
-    svg.set('textObject', text)
-    svg.on('scaling', function () {
-      centerTextInSVG(svg)
-    })
-    svg.on('moving', function () {
-      centerTextInSVG(svg)
-    })
-    svg.on('rotating', function () {
-      centerTextInSVG(svg)
-    })
-    canvas.add(svg, text)
   })
 }
 
-const createRectangle = ({ e, color, zoneType, fontSize }) => {
-  const rectangle = new fabric.Rect({
+const createText = ({ label, fontSize }) => {
+  return new fabric.Textbox(label, {
+    fontSize,
+    textAlign: 'center',
+    selectable: false,
+    fontFamily: 'Helvetica, Arial, sans-serif'
+  })
+}
+
+const createRectangle = ({ x, y, color }) => {
+  return new fabric.Rect({
     width: RECTANGLE_SIZE_CONTROLS,
     height: RECTANGLE_SIZE_CONTROLS,
-    left: e.layerX - RECTANGLE_SIZE_CONTROLS / 2,
-    top: e.layerY - RECTANGLE_SIZE_CONTROLS / 2,
+    left: x - RECTANGLE_SIZE_CONTROLS / 2,
+    top: y - RECTANGLE_SIZE_CONTROLS / 2,
     fill: color
   })
-
-  const text = new fabric.Textbox(zoneType + counter.toString(), {
-    fontSize,
-    left: e.layerX - RECTANGLE_SIZE_CONTROLS / 2,
-    width: RECTANGLE_SIZE_CONTROLS,
-    top: e.layerY - fontSize - RECTANGLE_SIZE_CONTROLS / 2,
-    textAlign: 'center',
-    selectable: false
-  })
-  counter++
-  rectangle.set('textObject', text)
-  rectangle.set('zoneType', zoneType)
-
-  rectangle.on('scaling', function () {
-    udpateText(rectangle)
-  })
-  rectangle.on('moving', function () {
-    udpateText(rectangle)
-  })
-  rectangle.on('rotating', function () {
-    udpateText(rectangle)
-  })
-  canvas.add(rectangle, text)
-}
-
-// dropElement function called on ondrop event.
-function dropElement (e) {
-  e.preventDefault()
-  const id = e.dataTransfer.getData('id')
-  console.log(id)
-  if (id === 'area') {
-    createRectangle({
-      e,
-      color: 'rgba(0, 128, 0, 0.1)',
-      zoneType: ZONE_TYPE.area,
-      fontSize: FONT_SIZE_AREA
-    })
-    return
-  }
-  if (id === 'floor') {
-    createRectangle({
-      e,
-      color: 'rgba(0, 0, 255, 0.1)',
-      zoneType: ZONE_TYPE.floor,
-      fontSize: FONT_SIZE_FLOOR
-    })
-    return
-  }
-
-  const data = TABLES_OPTIONS.find((table)=> table.id === id)
-  console.log(data)
-  createSVG({svgURL: data.src, color: data.color,x:e.layerX, y:e.layerY})
 }
 
 const removeSelected = () => {
