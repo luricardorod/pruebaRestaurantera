@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script src="../fabric.js"></script>
+  </head>
+  <body>
+    <link rel="stylesheet" href="style.css" />
+    <div class="mainCanvas">
+      <div class="sectionCanvas">
+        <canvas id="c1" width="800" height="1600"></canvas>
+      </div>
+      <div class="tools">
+        <header class="headerOptionSelection card">
+          <div id="editSelection" style="display: none;">
+            <p>Elemento seleccionado</p>
+            <div id="zoneSelectedOptions">
+              <label for="typeZone">Tipo de zona:</label>
+              <select id="typeZone" name="select"></select>
+            </div>
+            <div id="tableSelectedOptions">
+              <input type="text" id="myText" />
+              <button class="button-3" role="button" onclick="updateGroup()">
+                Update
+              </button>
+            </div>
+            <div class="footerEnd">
+              <button class="button-3" role="button" onclick="removeSelected()">
+                Eliminar
+              </button>
+            </div>
+          </div>
+          <div id="selectElement" >
+            <p>Selecciona una Reservación</p>
+          </div>
+        </header>
+        <div class="card" style="flex: 1">
+          <p>Reservas</p>
+          <div id="reservations">
+          </div>
+        </div>
+        <footer class="footerEnd">
+          <button class="button-3" role="button" onclick="loadJSON()">
+            cargar
+          </button>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="/prueba.js"></script>
+</html>

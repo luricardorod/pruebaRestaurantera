@@ -42,6 +42,7 @@
   flex-direction: column;
   margin: auto;
   text-align: center;
+  align-items: center;
 }
 
 .card {
@@ -49,7 +50,6 @@
   padding: 10px;
   border-radius: 5px;
 }
-
 
 /* CSS */
 .button-3 {
@@ -109,11 +109,94 @@
   justify-content: end;
 }
 
-input[type=text] {
+input[type='text'] {
   padding: 8px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  width: 100%;
+}
+
+.headerOptionSelection {
+  width: 250px;
+  height: 190px;
+}
+
+#editSelection {
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  gap: 5px;
+}
+
+#selectElement {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+#tableSelectedOptions {
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Estilo para el contenedor del select */
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+}
+
+.custom-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.2;
+  width: 100%;
+  cursor: pointer;
+}
+
+.custom-select::after {
+  content: '\25BC';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 12px;
+  color: #666;
+}
+
+.custom-select select:focus {
+  border-color: #66afe9;
+  outline: none;
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+}
+.optionsFormRow {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  label {
+    min-width: 100px;
+  }
+}
+
+.inputTextRow {
+  display: flex;
+  align-items: center;
+  gap: 2px
+}
+
+body {
+  display: flex;
+  justify-content: center
 }

@@ -10,145 +10,71 @@ const ZONE_TYPE = {
 }
 const FONT_SIZE_TABLES = 15
 const ZONES_AVAILABLE = [
+  'Barra',
+  'Planta Alta',
+  'Salón',
+  'Bar',
+  'Terraza',
+  'Otro'
+]
+
+const SEAT_TYPES = ['Sillon', 'Mesa Alta', 'Barra']
+
+const NUMBER_OF_SEATS = [2, 4, 6, 8, 10, 12]
+
+const ZONES_CONFIGURATION = [
   {
-    name: 'Barra'
+    name: 'Barra',
+    color: '#5568CD'
   },
   {
-    name: 'Planta Alta'
+    name: 'Planta Alta',
+    color: '#AF5FC1'
   },
   {
-    name: 'Salón'
+    name: 'Salón',
+    color: '#C46552'
   },
   {
-    name: 'Bar'
+    name: 'Bar',
+    color: '#7EBFD2'
   },
   {
-    name: 'Terraza'
+    name: 'Terraza',
+    color: '#7DD292'
   },
   {
-    name: 'Otro'
+    name: 'Otro',
+    color: '#E6B150'
   }
 ]
+
+const defaultZone = ZONES_CONFIGURATION[ZONES_CONFIGURATION.length - 1]
+
 const TABLES_OPTIONS = [
   {
     id: 'table1',
     color: 'rgba(0, 128, 0, 0.6)',
-    name: 'Alta XX',
-    src: './mesas/android.svg'
+    name: 'Alta',
+    src: './mesas/mesa1.svg'
   },
   {
     id: 'table2',
     color: 'rgba(128, 128, 0, 0.6)',
-    name: 'Alta XX',
-    src: './mesas/android.svg'
+    name: 'Cuadrada',
+    src: './mesas/mesa2.svg'
+  },
+  {
+    id: 'table4',
+    color: 'rgba(0, 128, 0, 0.6)',
+    name: 'Redonda',
+    src: './mesas/mesa4.svg'
   },
   {
     id: 'table3',
     color: 'rgba(0, 128, 128, 0.6)',
-    name: 'Alta XX',
-    src: './mesas/android.svg'
-  },
-  {
-    id: 'table1',
-    color: 'rgba(0, 128, 0, 0.6)',
-    name: 'Alta XX',
-    src: './mesas/android.svg'
-  },
-  {
-    id: 'table2',
-    color: 'rgba(128, 128, 0, 0.6)',
-    name: 'Alta XX',
-    src: './mesas/android.svg'
-  },
-  {
-    id: 'table1',
-    color: 'rgba(0, 128, 0, 0.6)',
-    name: 'Alta XX',
-    src: './mesas/android.svg'
-  },
-  {
-    id: 'table2',
-    color: 'rgba(128, 128, 0, 0.6)',
-    name: 'Alta XX',
-    src: './mesas/android.svg'
-  },
-  {
-    id: 'table3',
-    color: 'rgba(0, 128, 128, 0.6)',
-    name: 'Alta XX',
-    src: './mesas/android.svg'
-  },
-  {
-    id: 'table1',
-    color: 'rgba(0, 128, 0, 0.6)',
-    name: 'Alta XX',
-    src: './mesas/android.svg'
-  },
-  {
-    id: 'table2',
-    color: 'rgba(128, 128, 0, 0.6)',
-    name: 'Alta XX',
-    src: './mesas/android.svg'
-  },
-  {
-    id: 'table1',
-    color: 'rgba(0, 128, 0, 0.6)',
-    name: 'Alta XX',
-    src: './mesas/android.svg'
-  },
-  {
-    id: 'table2',
-    color: 'rgba(128, 128, 0, 0.6)',
-    name: 'Alta XX',
-    src: './mesas/android.svg'
-  },
-  {
-    id: 'table3',
-    color: 'rgba(0, 128, 128, 0.6)',
-    name: 'Alta XX',
-    src: './mesas/android.svg'
-  },
-  {
-    id: 'table1',
-    color: 'rgba(0, 128, 0, 0.6)',
-    name: 'Alta XX',
-    src: './mesas/android.svg'
-  },
-  {
-    id: 'table2',
-    color: 'rgba(128, 128, 0, 0.6)',
-    name: 'Alta XX',
-    src: './mesas/android.svg'
-  },
-  {
-    id: 'table1',
-    color: 'rgba(0, 128, 0, 0.6)',
-    name: 'Alta XX',
-    src: './mesas/android.svg'
-  },
-  {
-    id: 'table2',
-    color: 'rgba(128, 128, 0, 0.6)',
-    name: 'Alta XX',
-    src: './mesas/android.svg'
-  },
-  {
-    id: 'table3',
-    color: 'rgba(0, 128, 128, 0.6)',
-    name: 'Alta XX',
-    src: './mesas/android.svg'
-  },
-  {
-    id: 'table1',
-    color: 'rgba(0, 128, 0, 0.6)',
-    name: 'Alta XX',
-    src: './mesas/android.svg'
-  },
-  {
-    id: 'table2',
-    color: 'rgba(128, 128, 0, 0.6)',
-    name: 'Alta XX',
-    src: './mesas/android.svg'
+    name: 'otro',
+    src: './mesas/mesa3.svg'
   }
 ]
 const loadJSON = function () {
@@ -172,6 +98,39 @@ const loadJSON = function () {
   })
 }
 
+const updateZone = event => {
+  const dataZone = ZONES_CONFIGURATION.find(
+    zone => zone.name === event.target.value
+  )
+  if (!dataZone) return
+  const activeObj = canvas.getActiveObject()
+  activeObj.set('fill', dataZone.color)
+  const textObject = activeObj.textObject
+  if (textObject) {
+    textObject.set('text', dataZone.name)
+    const temp = createText({
+      label: dataZone.name,
+      fontSize: textObject.fontSize
+    })
+    console.log(temp.width)
+    console.log(textObject.width)
+    udpatePositionText(activeObj)
+  }
+  canvas.renderAll()
+}
+const createOptionsZones = () => {
+  const select = document.getElementById('typeZone')
+  ZONES_AVAILABLE.forEach(zone => {
+    const opt = document.createElement('option')
+    opt.value = zone
+    opt.innerHTML = zone
+    select.appendChild(opt)
+  })
+  select.addEventListener('change', updateZone)
+}
+
+createOptionsZones()
+
 const updateGroup = () => {
   const activeObj = canvas.getActiveObject()
   const textObject = activeObj.textObject
@@ -185,13 +144,17 @@ const updateGroup = () => {
 
 const saveJSON = () => {
   canvas.includeDefaultValues = false
-  console.log(
-    canvas.toJSON(['zoneType', 'relationID', 'selectable', 'others...'])
-  )
   localStorage.setItem(
     'map',
     JSON.stringify(
-      canvas.toJSON(['zoneType', 'relationID', 'selectable', 'others...'])
+      canvas.toJSON([
+        'zoneType',
+        'relationID',
+        'selectable',
+        'numberOfSeats',
+        'seatType',
+        'others...'
+      ])
     )
   )
 }
@@ -251,16 +214,17 @@ function observe (eventName) {
       eventName === 'object:moving' ||
       eventName === 'object:rotating'
     ) {
-      console.log(opt)
-      console.log(opt.target.textObject)
-
-      udpatePositionText(opt.target)
+      if (opt.target.type !== 'activeSelection') udpatePositionText(opt.target)
     }
     if (
       eventName === 'selection:updated' ||
       eventName === 'selection:created'
     ) {
       showSelection(opt)
+    }
+    if (eventName === 'selection:cleared') {
+      console.log('ocultar')
+      showOptionsSelection({ show: false })
     }
   })
 }
@@ -271,6 +235,44 @@ observe('selection:updated')
 observe('object:scaling')
 observe('object:moving')
 observe('object:rotating')
+observe('selection:cleared')
+
+const showZoneOptions = () => {
+  showOptionsSelection({ show: true })
+  const zoneOptions = document.getElementById('zoneSelectedOptions')
+  zoneOptions.style.display = 'flex'
+  const tableOptions = document.getElementById('tableSelectedOptions')
+  tableOptions.style.display = 'none'
+  const floorOptions = document.getElementById('floorSelectedOptions')
+  floorOptions.style.display = 'none'
+}
+
+const showTableOptions = () => {
+  showOptionsSelection({ show: true })
+  const floorOptions = document.getElementById('floorSelectedOptions')
+  floorOptions.style.display = 'none'
+  const zoneOptions = document.getElementById('zoneSelectedOptions')
+  zoneOptions.style.display = 'none'
+  const tableOptions = document.getElementById('tableSelectedOptions')
+  tableOptions.style.display = 'flex'
+}
+
+const showFloorOptions = () => {
+  showOptionsSelection({ show: true })
+  const floorOptions = document.getElementById('floorSelectedOptions')
+  floorOptions.style.display = 'flex'
+  const zoneOptions = document.getElementById('zoneSelectedOptions')
+  zoneOptions.style.display = 'none'
+  const tableOptions = document.getElementById('tableSelectedOptions')
+  tableOptions.style.display = 'none'
+}
+
+const showOptionsSelection = ({ show }) => {
+  const editSelection = document.getElementById('editSelection')
+  const selectElement = document.getElementById('selectElement')
+  editSelection.style.display = show ? 'flex' : 'none'
+  selectElement.style.display = show ? 'none' : 'flex'
+}
 
 const showSelection = opt => {
   const activeObj = canvas.getActiveObject()
@@ -279,6 +281,14 @@ const showSelection = opt => {
   const zoneType = activeObj.zoneType
   if (zoneType === ZONE_TYPE.floor) {
     activeObj.sendToBack()
+    showFloorOptions()
+  } else if (activeObj.zoneType === ZONE_TYPE.area) {
+    showZoneOptions()
+    document.getElementById('typeZone').value = textObject.text
+  } else if (activeObj.zoneType === ZONE_TYPE.table) {
+    showTableOptions()
+    document.getElementById('numberOfSeats').value = activeObj.numberOfSeats
+    document.getElementById('seatType').value = activeObj.seatType
   }
   document.getElementById('myText').value = textObject.text
 }
@@ -296,10 +306,10 @@ async function dropElement (e) {
     newObject = createRectangle({
       x: e.layerX,
       y: e.layerY,
-      color: 'rgba(0, 128, 0, 0.1)'
+      color: defaultZone.color
     })
     zoneType = ZONE_TYPE.area
-    label = zoneType + counter.toString()
+    label = defaultZone.name
     fontSize = FONT_SIZE_AREA
   } else if (id === 'floor') {
     newObject = createRectangle({
@@ -321,6 +331,8 @@ async function dropElement (e) {
     zoneType = ZONE_TYPE.table
     label = counter.toString()
     fontSize = FONT_SIZE_TABLES
+    newObject.set('numberOfSeats', NUMBER_OF_SEATS[0])
+    newObject.set('seatType', SEAT_TYPES[0])
   }
   const relationID = Date.now()
   const text = createText({ label, fontSize })
@@ -368,7 +380,6 @@ function loadSVGAsync ({ svgURL, color, x, y }) {
         })
         svg.getObjects().forEach(function (obj) {
           if (obj.type === 'path') {
-            obj.set('fill', color)
             obj.set('stroke', color)
           }
         })
@@ -409,3 +420,39 @@ const removeSelected = () => {
   }
   canvas.renderAll()
 }
+
+const updateSeatType = event => {
+  const activeObj = canvas.getActiveObject()
+  activeObj.set('seatType', event.target.value)
+}
+
+const createSeatTypeOptions = () => {
+  const select = document.getElementById('seatType')
+  SEAT_TYPES.forEach(type => {
+    const opt = document.createElement('option')
+    opt.value = type
+    opt.innerHTML = type
+    select.appendChild(opt)
+  })
+  select.addEventListener('change', updateSeatType)
+}
+
+createSeatTypeOptions()
+
+const updateNumberOfSeats = event => {
+  const activeObj = canvas.getActiveObject()
+  activeObj.set('numberOfSeats', event.target.value)
+}
+
+const createNumberOfSeatsOptions = () => {
+  const select = document.getElementById('numberOfSeats')
+  NUMBER_OF_SEATS.forEach(type => {
+    const opt = document.createElement('option')
+    opt.value = type
+    opt.innerHTML = type
+    select.appendChild(opt)
+  })
+  select.addEventListener('change', updateNumberOfSeats)
+}
+
+createNumberOfSeatsOptions()
