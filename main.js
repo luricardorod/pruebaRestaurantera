@@ -20,7 +20,7 @@ const ZONES_AVAILABLE = [
 
 const SEAT_TYPES = ['Sillon', 'Mesa Alta', 'Barra']
 
-const NUMBER_OF_SEATS = [2, 4, 6, 8, 10, 12]
+const NUMBER_OF_SEATS = [2, 4, 6, 8, 10, 12, 14]
 
 const ZONES_CONFIGURATION = [
   {

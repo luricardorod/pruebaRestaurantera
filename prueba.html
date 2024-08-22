@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
     <script src="../fabric.js"></script>
@@ -13,33 +17,88 @@
       <div class="sectionCanvas">
         <canvas id="c1" width="800" height="1600"></canvas>
       </div>
-      <div class="tools">
-        <header class="headerOptionSelection card">
-          <div id="editSelection" style="display: none;">
-            <p>Elemento seleccionado</p>
-            <div id="zoneSelectedOptions">
-              <label for="typeZone">Tipo de zona:</label>
-              <select id="typeZone" name="select"></select>
-            </div>
-            <div id="tableSelectedOptions">
-              <input type="text" id="myText" />
-              <button class="button-3" role="button" onclick="updateGroup()">
-                Update
-              </button>
-            </div>
-            <div class="footerEnd">
-              <button class="button-3" role="button" onclick="removeSelected()">
-                Eliminar
-              </button>
-            </div>
-          </div>
-          <div id="selectElement" >
+      <div class="side-bar">
+        <header class="card">
+          <div id="noReservationContainer" style="height: 351px">
             <p>Selecciona una Reservación</p>
+          </div>
+          <div id="reservationFormContainer" style="display: none">
+            <p>Reservación</p>
+            <form id="reservationForm" class="reservation-form">
+              <div class="form-row">
+                <label for="guestName" class="fa fa-user"></label>
+                <input type="text" id="guestName" name="guestName" required />
+              </div>
+              <div class="form-row">
+                <label for="reservationTime" class="fa fa-calendar"></label>
+                <input
+                  type="datetime-local"
+                  id="reservationTime"
+                  name="reservationTime"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <label for="guestCount" class="fa fa-user-plus"></label>
+                <input
+                  type="number"
+                  id="guestCount"
+                  name="guestCount"
+                  min="1"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <label for="availableSeats" class="fa fa-street-view"></label>
+                <input
+                  type="number"
+                  id="availableSeats"
+                  name="availableSeats"
+                  min="1"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <label for="status" class="fa fa-book"></label>
+                <select id="status" name="status" required>
+                  <option value="Confirmed">Confirmada</option>
+                  <option value="Pending">Pendiente</option>
+                  <option value="Cancelled">Cancelada</option>
+                </select>
+              </div>
+
+              <div id="assignedTables">
+                <div class="fa fa-tasks"></div>
+                <p>mesa1</p>
+                <button type="button" onclick="removeTableFromReservation()">
+                  &#10005;
+                </button>
+              </div>
+              <button onclick="assignTables()" type="button">
+                Asignar mesas seleccionadas
+              </button>
+              <button type="submit">Guardar Reservación</button>
+            </form>
           </div>
         </header>
         <div class="card" style="flex: 1">
           <p>Reservas</p>
-          <div id="reservations">
+          <div id="reservationsContainer">
+            <div class="card selected">
+              <ul class="fa-ul">
+                <li><span class="fa-li fa fa-user"> </span>Nombre</li>
+                <li><span class="fa-li fa fa-calendar"> </span>Horario</li>
+                <li><span class="fa-li fa fa-user-plus"> </span>Cantidad</li>
+                <li>
+                  <span class="fa-li fa fa-street-view"> </span>sillas
+                  disponible
+                </li>
+                <li><span class="fa-li fa fa-book"> </span>estatus</li>
+                <li>
+                  <span class="fa-li fa fa-tasks"> </span>mesas asiganadsas
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <footer class="footerEnd">

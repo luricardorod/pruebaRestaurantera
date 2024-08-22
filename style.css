@@ -200,3 +200,45 @@ body {
   display: flex;
   justify-content: center
 }
+
+#reservationsContainer { 
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  overflow-y: auto;
+  gap: 10px;
+}
+
+#reservationsContainer .selected { 
+  background-color: #298e46;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  label {
+    width: 20px;
+  }
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.side-bar {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#assignedTables{
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  text-align: center;
+  gap: 10px;
+  align-items: center;
+}
